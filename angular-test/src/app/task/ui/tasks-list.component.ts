@@ -39,7 +39,6 @@ export class TasksListComponent {
   private taskService = inject(TaskService);
 
   deleteTask(taskId: number) {
-    console.log("Task-list-component taskId", taskId);
     this.taskService.remove(taskId).then((res) => {
       if (res instanceof Error) {
         alert(res.message);

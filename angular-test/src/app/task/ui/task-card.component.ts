@@ -17,8 +17,8 @@ import { TaskUpdatePayload } from "../services/tasks.service";
   ],
   template: `
     <div
-      class="rounded-md shadow-md p-4 block"
-      [class.bg-green-300]="task.completed"
+      class="rounded-md shadow-xl p-4 block"
+      [class.bg-green-400]="task.completed"
     >
       <button
         class="w-full"
@@ -39,7 +39,6 @@ import { TaskUpdatePayload } from "../services/tasks.service";
           <ng-template #previewModeTemplate>
             <span [class.line-through]="task.completed">
               {{ task.title }}
-              {{ task.id }}
             </span>
           </ng-template>
         </section>
@@ -49,7 +48,6 @@ import { TaskUpdatePayload } from "../services/tasks.service";
       </button>
     </div>
   `,
-  styles: ``,
 })
 export class TaskCardComponent {
   @Input({ required: true }) task!: Task;

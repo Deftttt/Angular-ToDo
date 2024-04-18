@@ -9,7 +9,7 @@ import { NgIconComponent, provideIcons } from "@ng-icons/core";
   template: `
     <button
       (click)="remove.emit()"
-      class="flex hover:bg-white hover:rounded-full"
+      class="flex hover:bg-red-700 hover:rounded-full hover:text-white"
     >
       <ng-icon name="featherTrash2" class="icon--hover" />
     </button>

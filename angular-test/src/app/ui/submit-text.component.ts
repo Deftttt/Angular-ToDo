@@ -11,15 +11,13 @@ import { Component, EventEmitter, Output } from "@angular/core";
         (keyup.enter)="
           submitText.emit(taskNameInput.value); taskNameInput.value = ''
         "
-        class="border-b"
-        type="text"
-        placeholder="Add a new task"
+        class="border-b-2 border-violet-700 outline-none"
       />
       <button
         (click)="submitText.emit(taskNameInput.value); taskNameInput.value = ''"
-        class="border"
+        class="border-2 border-violet-700 ml-4 px-4 font-bold"
       >
-        Add
+        Add task
       </button>
       <div></div>
     </div>
